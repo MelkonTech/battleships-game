@@ -18,6 +18,7 @@ const Ship: FC<ShipProps> = ({ name, size, attackedCount, image }) => {
           if (x < attackedCount) {
             return (
               <img
+                key={x}
                 src='/images/Hit small.png'
                 alt='Hit Small'
                 className='lg:w-6 lg:h-6 transition-all w-4 h-4'
@@ -26,6 +27,7 @@ const Ship: FC<ShipProps> = ({ name, size, attackedCount, image }) => {
           }
           return (
             <img
+              key={x}
               src='/images/Miss small.png'
               alt='Hit Small'
               className='lg:w-6 lg:h-6 transition-all w-4 h-4'

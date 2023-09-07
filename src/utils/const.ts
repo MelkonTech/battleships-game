@@ -31,6 +31,8 @@ export const SHIP_LAYOUT = {
         [5, 9],
         [6, 9],
       ],
+      attackedPositionsCount: 0,
+      isCrushed: false,
     },
     {
       ship: "battleship",
@@ -40,6 +42,8 @@ export const SHIP_LAYOUT = {
         [5, 4],
         [5, 5],
       ],
+      attackedPositionsCount: 0,
+      isCrushed: false,
     },
     {
       ship: "cruiser",
@@ -48,6 +52,8 @@ export const SHIP_LAYOUT = {
         [8, 2],
         [8, 3],
       ],
+      attackedPositionsCount: 0,
+      isCrushed: false,
     },
     {
       ship: "submarine",
@@ -56,6 +62,8 @@ export const SHIP_LAYOUT = {
         [3, 1],
         [3, 2],
       ],
+      attackedPositionsCount: 0,
+      isCrushed: false,
     },
     {
       ship: "destroyer",
@@ -63,6 +71,12 @@ export const SHIP_LAYOUT = {
         [0, 0],
         [1, 0],
       ],
+      attackedPositionsCount: 0,
+      isCrushed: false,
     },
   ],
 };
+
+export const HIDDEN_POINTS = SHIP_LAYOUT.layout.flatMap(
+  (layout) => layout.positions
+);
