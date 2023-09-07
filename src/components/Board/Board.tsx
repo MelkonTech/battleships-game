@@ -6,10 +6,10 @@ const Board = () => {
 
   return (
     <div className='my-1 w-[calc(100vw-8px)] h-[100vw] lg:w-[50vw] lg:h-[50vw] md:max-w-[520px] md:max-h-[520px] shadow-board flex-shrink-0'>
-      {Array.from(Array(10), (_, i) => i + 1).map((x) => {
+      {Array.from(Array(10), (_, i) => i).map((x) => {
         return (
           <div className='flex flex-row' key={x}>
-            {Array.from(Array(10), (_, i) => i + 1).map((y) => {
+            {Array.from(Array(10), (_, i) => i).map((y) => {
               return (
                 <div
                   className='w-[10vw] h-[10vw] md:w-[52px] md:h-[52px] border border-black'

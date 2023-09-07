@@ -3,13 +3,13 @@ import { TPlayer } from "@types";
 export const players: TPlayer[] = [
   {
     name: "player 1",
-    count: 2,
     color: "GREEN",
+    count: 0,
   },
   {
     name: "player 2",
-    count: 0,
     color: "ORANGE",
+    count: 0,
   },
 ];
 
@@ -32,7 +32,6 @@ export const SHIP_LAYOUT = {
         [6, 9],
       ],
       attackedPositionsCount: 0,
-      isCrushed: false,
     },
     {
       ship: "battleship",
@@ -43,7 +42,6 @@ export const SHIP_LAYOUT = {
         [5, 5],
       ],
       attackedPositionsCount: 0,
-      isCrushed: false,
     },
     {
       ship: "cruiser",
@@ -53,7 +51,6 @@ export const SHIP_LAYOUT = {
         [8, 3],
       ],
       attackedPositionsCount: 0,
-      isCrushed: false,
     },
     {
       ship: "submarine",
@@ -63,7 +60,6 @@ export const SHIP_LAYOUT = {
         [3, 2],
       ],
       attackedPositionsCount: 0,
-      isCrushed: false,
     },
     {
       ship: "destroyer",
@@ -72,7 +68,6 @@ export const SHIP_LAYOUT = {
         [1, 0],
       ],
       attackedPositionsCount: 0,
-      isCrushed: false,
     },
   ],
 };
