@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { Game } from "@components/Game";
 
 function App() {
   const [clicked, setClicked] = useState(false);
 
   const playSound = () => {
-    const audio = new Audio('./audios/background.mp3');
+    const audio = new Audio("./sounds/background.mp3");
     audio.play();
   };
 
